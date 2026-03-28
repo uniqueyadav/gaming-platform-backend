@@ -21,6 +21,7 @@ const MONGO_URL = isProduction ?
 const allowedOrigins = [
     process.env.CLIENT_URL,
     process.env.CLIENT_URL_2,
+    "https://goltcharityplatform.vercel.app/",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:3000",
