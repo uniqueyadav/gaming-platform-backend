@@ -47,7 +47,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-    res.send("HealthNexus Backend Running 🚀");
+    res.send("golf charity subscription platform Backend Running 🚀");
 });
 
 app.use("/api/admin", adminRoute);
