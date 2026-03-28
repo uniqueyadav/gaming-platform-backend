@@ -27,7 +27,11 @@ const allowedOrigins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ].filter(Boolean);
-
+app.use(cors({
+    origin: "https://goltcharityplatform.vercel.app", // Aapka frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
 app.use(express.json());
 
 app.use(
